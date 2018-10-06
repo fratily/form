@@ -1,0 +1,23 @@
+{
+    "name": "fratily/form",
+    "type": "library",
+    "keywords": [
+        "fratily",
+        "form"
+    ],
+    "authors": [
+        {
+            "name": "Kento Oka",
+            "email": "kento-oka@kentoka.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fratily\\Form\\": "src/"
+        }
+    }
+}
