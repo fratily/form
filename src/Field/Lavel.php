@@ -11,26 +11,21 @@
  * @license     MIT
  * @since       1.0.0
  */
-namespace Fratily\Form\Fields;
+namespace Fratily\Form\Field;
 
 /**
  *
  */
-interface FieldInterface{
+class Lavel{
+
+    use AttributeTrait;
 
     /**
-     * フィールドインスタンスを生成する
-     *
-     * @param   string  $name
-     *  フィールド名
-     *
-     * @return  static
+     * @var string
      */
-    public static function build(string $name);
+    private $name;
 
-    /**
-     * デフォルト値を設定する
-     */
-    public function setDefault();
-
+    public function __construct(string $name){
+        $this->name = $name;
+    }
 }
